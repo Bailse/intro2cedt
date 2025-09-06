@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <header>
+            <h1 class="app-title">คุณเหมือนสัตว์ตัวไหน?</h1>
+            <p class="app-subtitle">แบบทดสอบสนุกๆ ที่จะบอกว่าคุณมีบุคลิกเหมือนสัตว์ตัวไหนมากที่สุด!</p>
+        </header>
+
+        <div id="category-selection" class="card">
+            <h2 class="card-title">เลือกหมวดหมู่ที่อยากลอง</h2>
+            <div class="button-group">
+                <button class="quiz-btn" data-category="dog">🐶 หมา</button>
+                <button class="quiz-btn" data-category="cat">🐱 แมว</button>
+                <button class="quiz-btn" data-category="mythical">🦄 สัตว์ในเทพนิยาย</button>
+            </div>
+        </div>
+
+        <div id="quiz-section" class="card" style="display: none;">
+            <h2 id="quiz-title" class="card-title"></h2>
+            <div id="questions-container" class="questions-container">
+                </div>
+            <button id="submit-quiz" class="action-btn" style="display: none;">ดูผลลัพธ์</button>
+        </div>
+
+        <div id="result-section" class="card result-card" style="display: none;">
+            <h2 id="result-title" class="card-title"></h2>
+            <div class="result-image-container">
+                <img id="result-image" alt="Result Image" class="result-image">
+            </div>
+            <p id="result-description" class="result-description"></p>
+            <button id="restart-quiz" class="action-btn secondary-btn">ลองใหม่</button>
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>

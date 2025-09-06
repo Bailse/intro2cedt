@@ -1,0 +1,148 @@
+/* Import Google Fonts (Sarabun) */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+
+/* Basic styles & typography */
+body {
+    font-family: 'Sarabun', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.app-title {
+    font-size: 2.5em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.app-subtitle {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Card and button styling */
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.8em;
+    color: #555;
+    margin-top: 0;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.quiz-btn, .action-btn {
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.quiz-btn {
+    background-color: #2e8b57;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-btn:hover {
+    background-color: #3cb371;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.action-btn {
+    background-color: #1e90ff;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.action-btn:hover {
+    background-color: #4682b4;
+}
+
+.secondary-btn {
+    background-color: #ccc;
+    color: #333;
+}
+
+.secondary-btn:hover {
+    background-color: #bbb;
+}
+
+/* Quiz and Result sections */
+.questions-container {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.question {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.option-btn {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.option-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.result-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-description {
+    font-size: 1.1em;
+    color: #444;
+    line-height: 1.6;
+}
